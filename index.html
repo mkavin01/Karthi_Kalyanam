@@ -144,6 +144,10 @@ footer{padding:36px 24px 50px;text-align:center;background:var(--deep2);color:#c
 .reveal.in{opacity:1;transform:none}
 #mus{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;width:48px;height:48px;border-radius:50%;border:1px solid var(--gold);background:radial-gradient(circle at 35% 30%,#8466b0,var(--plum));color:var(--gold);font-size:20px;display:none;cursor:pointer}
 #mus.on{animation:pulse 2.2s infinite}
+.credit{margin-top:26px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#cdbfe6;font-style:normal;display:flex;align-items:center;justify-content:center;gap:12px}
+.credit::before,.credit::after{content:"";width:34px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.credit::after{transform:scaleX(-1)}
+.credit b{font-family:var(--serif);font-weight:400;font-style:italic;font-size:15px;letter-spacing:.08em;text-transform:none;color:var(--gold)}
 </style>
 </head>
 <body class="locked">
@@ -253,7 +257,10 @@ footer{padding:36px 24px 50px;text-align:center;background:var(--deep2);color:#c
   </form>
   <div id="thanks">Thank you! We can’t wait to celebrate with you.</div>
 </section>
-<footer>We can’t wait to celebrate with you.</footer>
+<footer>
+  We can’t wait to celebrate with you.
+  <div class="credit"><span>Designed by</span><b>Thugira E-Designs</b></div>
+</footer>
 
 <script>
 /* ===== CONFIG: edit here ===== */
